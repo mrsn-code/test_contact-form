@@ -16,7 +16,7 @@
 * cp .env.example .env, 環境変数を適宜変更
 * php artisan key:generate
 * php artisan migrate
-* php artinsa db:seed
+* php artisan db:seed
 
 ### 開発環境
 
