@@ -36,5 +36,5 @@
 
 ## ER図
 
-<img src="/Users/murakamishingo/Desktop/CT_test/test3/img/index.drawio.png">
+<img src="img/index.drawio.png">
 
