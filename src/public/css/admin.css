@@ -1,0 +1,123 @@
+.header__nav-button {
+  text-decoration: none;
+  color: #8a7868;
+  background: #f4f4f4;
+  border: none;
+  cursor: pointer;
+}
+.admin__content {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 1230px;
+}
+.admin__heading {
+  text-align: center;
+}
+.admin__heading h2 {
+  color: #8a7868;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.search-form__search {
+  display: flex;
+  justify-content: space-between;
+}
+.search-form__keyword {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #fbfbfb;
+  color: #b0a49a;
+  border:1px solid #edebe9;
+  cursor: pointer;
+}
+.search-form__gender {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #f4f4f4;
+  color: #b0a49a;
+  border:1px solid #edebe9;
+  cursor: pointer;
+}
+.search-form__category {
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 180px;
+  background: #f4f4f4;
+  color: #b0a49a;
+  border:1px solid #edebe9;
+  cursor: pointer;
+}
+.search-form__date {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #f4f4f4;
+  color: #b0a49a;
+  border:1px solid #edebe9;
+  cursor: pointer;
+}
+.search-form__button-submit {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #8b7969;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.search-form__reset {
+  height: 100%;
+}
+.search-form__reset-submit {
+  padding: 10px 20px;
+  background: #d9c6b5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.list-actions {
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.list-actions__export-submit {
+  padding: 10px 20px;
+  background: #edeae6;
+  color: #9a8b7d;
+  border: none;
+}
+.admin__table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #f0f0ef;
+}
+.admin__table tr {
+  border: 1px solid #f0f0ef;
+}
+.admin__table--row-head {
+
+}
+.admin__table-heading {
+  padding: 10px 0;
+  padding-left: 30px;
+  background: #8b7969;
+  color: #fff;
+  text-align: left;
+}
+.admin__table-data {
+  padding: 10px 0;
+  padding-left: 30px;
+  text-align: left;
+  color: #a49587;
+}
+.admin__table-data:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.admin__table-category {
+  
+}

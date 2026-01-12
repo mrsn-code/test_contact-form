@@ -1,0 +1,20 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ecebea;
+}
+.header__inner {
+  position: relative;
+  max-width: 1230px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  font-size: 24px;
+  color: #8a7868;
+}
