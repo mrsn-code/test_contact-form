@@ -12,8 +12,8 @@
 ### Laravel環境構築
 
 * docker-compose exec php bash
-* compposer install
-* cp .env.example .env, 環境変数を以下のように変更
+* composer install
+* cp .env.example .env, 環境変数を適宜変更
 * php artisan key:generate
 * php artisan migrate
 * php artinsa db:seed

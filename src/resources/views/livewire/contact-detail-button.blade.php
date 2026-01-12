@@ -9,7 +9,7 @@
   padding: 10px 20px;
   background: #fcfcfc;
   color: #e0d1c3;
-  border-color: #e0d1c3;
+  border: 1px solid #e0d1c3;
   cursor: pointer;
   }
 </style>

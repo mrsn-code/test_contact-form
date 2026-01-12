@@ -48,7 +48,7 @@
     <div>{{$contacts->links('vendor.pagination.custom-bootstrap-4')}}</div>
   </div>
   <table class="admin__table">
-    <tr class="admin__table--row-head">
+    <tr>
       <th class="admin__table-heading">お名前</th>
       <th class="admin__table-heading">性別</th>
       <th class="admin__table-heading">メールアドレス</th>
@@ -60,7 +60,7 @@
         <td class="admin__table-data">{{$contact->gender_label}}</td>
         <td class="admin__table-data">{{$contact->email}}</td>
         <td class="admin__table-data">
-          <span class="admin__table-category">
+          <span>
             {{$contact->category->content}}
           </span>
           <span>
@@ -80,25 +80,41 @@
     </div>
 
     <div class="modal-body">
-      <dl>
-        <dt>お名前</dt><dd id="m-name"></dd>
-        <dt>性別</dt><dd id="m-gender"></dd>
-        <dt>メールアドレス</dt><dd id="m-email"></dd>
-        <dt>電話番号</dt><dd id="m-tel"></dd>
-        <dt>住所</dt><dd id="m-address"></dd>
-        <dt>建物名</dt><dd id="m-building"></dd>
-        <dt>お問い合わせの種類</dt><dd id="m-category"></dd>
-        <dt>お問い合わせ内容</dt><dd id="m-detail" style="white-space:pre-wrap;"></dd>
-      </dl>
+      <table class="modal-table">
+        <tr>
+          <th>お名前</th><td id="m-name"></td>
+        </tr>
+        <tr>
+          <th>性別</th><td id="m-gender"></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th><td id="m-email"></td>
+        </tr>
+        <tr>
+          <th>電話番号</th><td id="m-tel"></td>
+        </tr>
+        <tr>
+          <th>住所</th><td id="m-address"></td>
+        </tr>
+        <tr>
+          <th>建物名</th><td id="m-building"></td>
+        </tr>
+        <tr>
+          <th>お問い合わせの種類</th><td id="m-category"></td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th><td id="m-detail" style="white-space:pre-wrap;"></td>
+        </tr>
+      </table>
     </div>
 
     <div class="modal-footer">
-      <form class="delete-form" action="delete" method="post">
+      <form action="delete" method="post">
         @method('DELETE')
         @csrf
-        <div class="delete-form__button">
+        <div class="delete__button">
           <input type="hidden" id="contact_id" name="contact_id">
-          <button type="submit">削除</button>
+          <button class="delete__button-submit" type="submit">削除</button>
         </div>
       </form>
     </div>
@@ -111,6 +127,29 @@
 .modal-panel{background:#fff; width:min(720px,100%); border-radius:12px; overflow:hidden;}
 .modal-header,.modal-footer{padding:12px 16px; border-bottom:1px solid #eee;}
 .modal-body{padding:16px;}
+.modal-table {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+.modal-table tr {
+  color: #8a7868;
+}
+.modal-table th {
+  margin-right: 40px;
+  text-align: left;
+}
+.delete__button {
+  margin: 0 auto;
+  text-align: center;
+}
+.delete__button-submit {
+  padding: 10px 20px;
+  background: #ba360e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 </style>
 
 <script>
